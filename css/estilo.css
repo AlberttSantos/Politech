@@ -1,0 +1,357 @@
+﻿body
+{
+	margin: auto;
+	width: 100%;
+}
+
+.conteudo
+{
+	width: 1170px;
+	margin-left: auto;
+	margin-right: auto;
+	
+	
+}
+
+/*Area do catálogo de produtos do site*/
+.conteudo2
+{
+	width: 880px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Define a area onde os icones das redes sociais estão posicionados */
+.areaSocial
+{
+	width: 100%;
+	height: 32px;
+	margin-top: 2px;
+	border-bottom: solid #E5E5E5 1px;
+}
+
+.areaLogin
+{
+	width: 90%;
+	margin-top: 2px;
+	margin: auto;
+	padding: auto;
+	border-bottom: solid #E5E5E5 1px;
+}
+
+/* Define a estrutura e o espaçamento entre as imagens das redes sociais*/
+.social
+{
+	margin: 0 5px;
+	padding: 0;
+	width: 18px;
+	height: 18px;
+	display: inline-block;
+	opacity: 0.60;
+}
+
+.social:hover
+{
+	opacity: 1;
+}
+
+/*Com isso sua fonte está instalada no site*/
+@font-face 
+{
+    font-family: "Gotham Rounded";
+    src: url(../font/gotham-rounded-book.otf);
+}
+
+@font-face 
+{
+    font-family: "Segoe UI Light 8";
+    src: url(../font/segoeuil.ttf);
+}
+
+@font-face 
+{
+    font-family: "Segoe UI 8";
+    src: url(font/segoeui.ttf);
+}
+
+/* DEFINE A AREA DO LOGO E A DE PESQUISA */
+.area
+{
+	height: 100px;
+	width: 100%;
+}
+
+.area2
+{
+	width: 100%;
+}
+
+.logo
+{
+	background-image: url("../img/logo.png");
+	background-repeat: no-repeat;
+	width: 306px;
+	height: 51px;
+	margin-top: 14px;
+	float: left;
+}
+
+.logo2
+{
+	background-image: url("../img/logo2.png");
+	background-repeat: no-repeat;
+	width: 306px;
+	height: 51px;
+	margin-top: 4px;
+	float: left;
+}
+
+/*DEFINE A ESTRUTURA DA AREA DE PESQUISA*/
+.areaPesquisa
+{
+	float: left;
+	margin-left: 6%;
+	margin-top: 35px;
+	width: 400px;
+}
+
+/*DEFINE A ESTRUTURA DA AREA EM QUE ESTÁ CONTIDO O JAVASCRIPT*/
+.cont1
+{
+	width: 100%;
+	background-color: #1E90FF;
+	height: 550px;
+	border-top: solid #CD2626 5px;
+	border-bottom: solid #CD2626 3px;
+	background: url("http://subtlepatterns.com/patterns/debut_dark.png");
+}
+
+/* Define a area do Cabeçalho das páginas */
+.areaH1
+{
+	border-top: solid #1E90FF 3px;
+	background-color: #1E90FF
+	width: 100%;
+	height: 70px;
+	background: url("../img/debut_dark.png");
+	
+}
+
+
+
+.h1
+{
+	width: 1170px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Segoe UI Light 8";
+	color: white;
+	font-weight: lighter;
+	font-size: 30px;
+	margin-top: 15px;
+}
+
+.h2
+{
+	width: 1170px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Segoe UI Light 8";
+	color: white;
+	font-size: 15px;
+	font-weight: lighter;
+	margin-top: 12px;
+	font-style: italic;
+}
+
+.h3
+{
+	font-family: "Segoe UI 8";
+	font-size: 18px;
+	margin-top: 50px;
+	text-transform: uppercase;
+	
+}
+
+.hr
+{
+	margin-top: 30px;
+	width: 99%;
+	border: solid #1E90FF 1px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.rodape
+{
+	margin-top: 10px;
+}
+
+.textorodape
+{
+	color: gray;
+	font-size: 14px;
+	font-family: "Segoe UI 8";
+	text-align: center;
+}
+
+.textovisualizacao
+{
+	color: black;
+	font-size: 15px;
+	font-family: "Segoe UI Light 8";
+	
+}
+
+/* -------------------------------------------------------------------*/
+/* ESTILO DO LOGIN DROPDOWN */
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  float: right;
+  background: #eee;
+  border-bottom: 1px solid #fff;
+  border-radius: 3px; 
+}
+
+nav li {
+  float: left;        
+}
+
+nav #login {
+  border-right: 1px solid #ddd;
+  box-shadow: 1px 0 0 #fff;
+}
+
+nav #login-trigger,
+nav #signup a {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  height: 25px;
+  line-height: 25px;
+  padding: 0 8px;
+  text-decoration: none;
+  color: #444;
+  text-shadow: 0 1px 0 #fff;
+  font-family: "Segoe UI 8";
+  text-transform: uppercase;
+  font-size: 11px;
+}
+
+/*ESTRUTURA DO BOTAO CADASTRAR*/
+nav #signup a {
+  border-radius: 0 3px 3px 0;
+
+}
+
+/*ESTRUTURA DO BOTAO ENTRAR*/
+nav #login-trigger {
+  border-radius: 3px 0 0 3px;
+}
+
+nav #login-trigger:hover,
+nav #login .active,
+nav #signup a:hover {
+  background: #fff;
+}
+
+nav #login-content {
+  display: none;
+  position: absolute;
+  top: 24px;
+  right: 0;
+  z-index: 999;    
+  background: #fff;
+  background-image: linear-gradient(top, #fff, #eee);  
+  padding: 15px;
+  box-shadow: 0 2px 2px -1px rgba(0,0,0,.9);
+  border-radius: 3px 0 3px 3px;
+}
+
+nav li #login-content {
+  right: 0;
+  width: 250px;  
+}
+
+/*--------------------*/
+
+#inputs input {
+  background: #f1f1f1;
+  padding: 6px 5px;
+  margin: 0 0 5px 0;
+  width: 238px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: 0 1px 1px #ccc inset;
+  height: 30px;
+}
+
+#inputs input:focus {
+  background-color: #f1f1f1;
+  border-color: #CD3333;
+  outline: none;
+  box-shadow: 0 0 0 1px #CD3333 inset;
+}
+
+/*--------------------*/
+
+#login #actions {
+  margin: 10px 0 0 0;
+}
+
+#login #submit {    
+  background-color: #CD2626;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 5px;
+  text-shadow: 0 1px 0 rgba(0,0,0,.5);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;    
+  border: 1px solid #7e1515;
+  float: left;
+  height: 30px;
+  padding: 0;
+  width: 80px;
+  cursor: pointer;
+  font: 12px "Segoe UI 8";
+  text-transform: uppercase;
+  color: #fff;
+}
+
+#login #submit:hover,
+#login #submit:focus {    
+  background-color: #e97171;
+  background-image: linear-gradient(top, #d14545, #e97171);
+} 
+
+#login #submit:active {   
+  outline: none;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;   
+}
+
+#login #submit::-moz-focus-inner {
+  border: none;
+}
+
+#login label {
+  float: right;
+	font: 13px "Segoe UI 8";
+	margin-top: 4px;
+	margin-right: 6px;
+	
+}
+
+#login label input {
+  position: relative;
+  top: 2px;
+}
+
+/* MENSAGEM DE ALERTA JAVASCRIPT */
+.msg
+{
+	color: red;
+	font-size: 12px;
+	margin-top: 10px;
+}

@@ -1,0 +1,13 @@
+﻿/*Com isso sua fonte está instalada no site*/
+
+@font-face 
+{
+    font-family: "Segoe UI Light 8";
+    src: url(font/segoeuil.ttf);
+}
+
+@font-face 
+{
+    font-family: "Segoe UI 8";
+    src: url(font/segoeui.ttf);
+}
