@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 07-Nov-2016 às 19:02
+-- Generation Time: 26-Jul-2018 às 02:37
 -- Versão do servidor: 10.1.16-MariaDB
 -- PHP Version: 5.6.24
 
@@ -87,10 +87,9 @@ CREATE TABLE `cliente` (
 --
 
 INSERT INTO `cliente` (`CDCLIENTE`, `NMCLIENTE`, `CPF`, `NMPROFISSAO`, `DESCRICAO`, `OBSERVACAO`, `SEXO`, `TELEFONE`, `CELULAR`, `CEP`, `LOGRADOURO`, `NUMERO`, `COMP`, `BAIRRO`, `CIDADE`, `ESTADO`, `STATUS`, `EMAIL`) VALUES
-(3, 'Albertt Aurélio', '118.274.906-24', 'Assessor de Desenvolvimento', '', '', 'M', '(31) 9730-5845', '(31) 97305-8451', '35.170-370', 'Rua Vinte e Quatro', 12312, '', 'Belvedere', 'Coronel Fabriciano', 'MG', 'A', 'alberttaurelio@hotmail.com'),
-(4, 'Eduardo de Castro Alvarenga', '118.274.906-24', 'Diretor de Projetos', '', 'nenhuma', 'M', '(31) 9730-5845', '(31) 97305-8453', '35.170-053', 'Rua Cônego Domingos', 1231231, '', 'Todos os Santos', 'Coronel Fabriciano', 'MG', 'D', 'eduardo@politech.com'),
-(5, 'Albertt', '118.274.906-24', 'Assessor de Desenvolvimento', '', '', 'M', '(31) 9730-5841', '(31) 97305-8411', '35.170-370', 'Rua Vinte e Quatro', 211, '', 'Belvedere', 'Coronel Fabriciano', 'MG', 'A', 'alberttaurelio@hotmail.com'),
-(6, 'Albertt Aurélio', '118.274.906-24', 'Assessor de Desenvolvimento', '', '', 'M', '(31) 9730-5845', '(31) 97305-8451', '35170-370', 'Rua Vinte e Quatro', 25, '', 'Belvedere', 'Coronel Fabriciano', 'MG', 'A', 'alberttaurelio@hotmail.com');
+(4, 'Eduardo de Castro Alvarenga', '118.274.906-24', 'Diretor de Projetos', '', 'nenhuma', 'M', '(31) 9730-5845', '(31) 97305-8453', '35.170-053', 'Rua Cônego Domingos', 1231231, '', 'Todos os Santos', 'Coronel Fabriciano', 'MG', 'A', 'eduardo@politech.com'),
+(5, 'Albertt', '118.274.906-24', 'Assessor de Desenvolvimento', '', '', 'M', '(31) 9730-5841', '(31) 97305-8411', '35.170-370', 'Rua Vinte e Quatro', 211, '', 'Belvedere', 'Coronel Fabriciano', 'MG', 'D', 'alberttaurelio@hotmail.com'),
+(6, 'Eduardo Alvarenga', '118.274.906-24', 'Assessor de Desenvolvimento', '', '', 'M', '(31) 9730-5845', '(31) 97305-8451', '35170-370', 'Rua Vinte e Quatro', 25, '', 'Belvedere', 'Coronel Fabriciano', 'MG', 'D', 'alberttaurelio@hotmail.com');
 
 -- --------------------------------------------------------
 
@@ -155,8 +154,16 @@ CREATE TABLE `funcionario` (
 --
 
 INSERT INTO `funcionario` (`CDFUNCIONARIO`, `NMFUNCIONARIO`, `EMAIL`, `CPF`, `DTNASC`, `SEXO`, `DTADM`, `DTDESLIGAMENTO`, `PERIODO`, `CURSO`, `CDCARGO`, `TELEFONE`, `CELULAR`, `CEP`, `LOGRADOURO`, `NUMERO`, `COMP`, `BAIRRO`, `CIDADE`, `ESTADO`, `STATUS`, `FACEBOOK`, `LATTES`, `LINKEDIN`, `OBSERVACAO`, `DESCRICAO`) VALUES
-(1, 'Albertt Aurélio', 'alberttaurelio@hotmail.com', '118.274.906-24', '03/01/1995', 'M', '03/06/2016', '', '8', 'Sistemas de Informação', 1, '(31) 9730-5845', '(31) 97305-8451', '35.170-370', 'Rua Vinte e Quatro', 211, '', 'Belvedere', 'Coronel Fabriciano', 'MG', 'A', 'face@face.com', 'lattes@lattes.com', 'linkedin@linkedin.com', 'teste obs', 'site'),
-(2, 'André Felipe', 'adeildo@gmail.com', '118.274.906-24', '03/01/1995', 'M', '03/01/2016', '', '3', 'Tecnologia de Soldagem', 3, '(31) 9730-5845', '(12) 31231-2312', '35.170-141', 'Rua Belo Horizonte', 55, '', 'Olaria', 'Coronel Fabriciano', 'MG', 'A', '', '', '', '', '');
+(1, 'Albertt Aurélio Arthur dos Santos', 'alberttaurelio@hotmail.com', '118.274.906-24', '03/01/1995', 'M', '03/06/2016', '', '8', 'Sistemas de Informação', 1, '(31) 9730-5845', '(31) 97305-8451', '35.170-370', 'Rua Vinte e Quatro', 211, '', 'Belvedere', 'Coronel Fabriciano', 'MG', 'A', 'face@face.com', 'lattes@lattes.com', 'linkedin@linkedin.com', 'teste obs', 'site'),
+(2, 'André Felipe', 'adeildo@gmail.com', '118.274.906-24', '03/01/1995', 'M', '03/01/2016', '', '3', 'Tecnologia de Soldagem', 3, '(31) 9730-5845', '(12) 31231-2312', '35.170-141', 'Rua Belo Horizonte', 55, '', 'Olaria', 'Coronel Fabriciano', 'MG', 'A', '', '', '', '', ''),
+(3, 'Eduardo Alvarenga', 'alberttaurelio@hotmail.com', '118.274.906-24', '03/01/1995', 'M', '03/01/2016', '03/01/1995', '9', 'Engenharia Civil', 3, '(21) 2312-3123', '(12) 31231-2312', '35.170-370', 'Rua Vinte e Quatro', 21, '', 'Belvedere', 'Coronel Fabriciano', 'MG', 'A', '', '', '', '', ''),
+(4, 'Fernanda', 'alberttaurelio@hotmail.com', '118.274.906-24', '03/01/1995', 'F', '03/01/2016', '03/01/1995', '2', 'Arquitetura e Urbanismo', 1, '(31) 9730-5845', '(12) 31231-2312', '35.170-370', 'Rua Vinte e Quatro', 12, '', 'Belvedere', 'Coronel Fabriciano', 'MG', 'A', '', '', '', '', ''),
+(5, 'Adeildo Joaquim', 'adeildo@gmail.com', '118.274.906-24', '03/01/1995', 'M', '03/01/2016', '03/01/1995', '2', 'Arquitetura e Urbanismo', 2, '(13) 5131-3513', '(13) 51315-3513', '35.170-370', 'Rua Vinte e Quatro', 13, '', 'Belvedere', 'Coronel Fabriciano', 'MG', 'A', '', '', '', '', ''),
+(6, 'Elaine Maria', 'elaine@hotmail.com', '118.274.906-24', '03/01/1995', 'F', '03/01/2016', '03/01/1995', '2', 'Engenharia Civil', 1, '(12) 3123-1231', '(12) 31231-2312', '35.170-370', 'Rua Vinte e Quatro', 12, '', 'Belvedere', 'Coronel Fabriciano', 'MG', 'A', '', '', '', '', ''),
+(7, 'Thais ', 'alberttaurelio@hotmail.com', '118.274.906-24', '03/01/1995', 'F', '03/01/2016', '', '6', 'Engenharia Ambiental e Sanitária', 3, '(31) 9730-5845', '(12) 31231-2312', '35.170-370', 'Rua Vinte e Quatro', 31, '', 'Belvedere', 'Coronel Fabriciano', 'MG', 'A', '', '', '', '', ''),
+(8, 'Membro teste', 'alberttaurelio@hotmail.com', '118.274.906-24', '03/01/1995', 'F', '03/01/2016', '03/01/1995', '2', 'Arquitetura e Urbanismo', 2, '(31) 9730-5845', '(12) 31231-2312', '35.170-370', 'Rua Vinte e Quatro', 31, '', 'Belvedere', 'Coronel Fabriciano', 'MG', 'A', '', '', '', '', ''),
+(9, 'Yumi', 'alberttaurelio@hotmail.com', '118.274.906-24', '03/01/1995', 'F', '03/01/2016', '03/01/1995', '2', 'Engenharia Ambiental e Sanitária', 2, '(31) 9730-5845', '(12) 31231-2312', '35.170-370', 'Rua Vinte e Quatro', 31, '', 'Belvedere', 'Coronel Fabriciano', 'MG', 'A', '', '', '', '', ''),
+(10, 'Membro 10', 'alberttaurelio@hotmail.com', '118.274.906-24', '03/01/1995', 'F', '03/01/2016', '03/01/1995', '2', 'Engenharia Elétrica', 1, '(31) 9730-5845', '(12) 31231-2312', '35.170-370', 'Rua Vinte e Quatro', 31, '', 'Belvedere', 'Coronel Fabriciano', 'MG', 'A', '', '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -288,6 +295,7 @@ CREATE TABLE `projeto` (
   `DTASSINATURA` varchar(10) NOT NULL,
   `NUMVISITASTEC` int(11) NOT NULL,
   `CONTRAPROPOSTA` enum('Sim','Não') NOT NULL,
+  `OBSVISITAS` varchar(500) DEFAULT NULL,
   `FORMAPAG` enum('Dinheiro','Transferencia Bancaria','Crédito','Débito','Boleto') NOT NULL,
   `STATUSPROJ` enum('Não Iniciado','Em andamento','Concluido') NOT NULL,
   `CEP` varchar(10) NOT NULL,
@@ -298,16 +306,16 @@ CREATE TABLE `projeto` (
   `CIDADE` varchar(40) NOT NULL,
   `ESTADO` enum('AC','AL','AP','AM','BA','CE','DF','ES','GO','MA','MS','MG','PA','PB','PR','PE','PI','RJ','RN','RS','RO','RR','SC','SP','SE','TO') NOT NULL,
   `STATUS` enum('A','D') NOT NULL,
-  `OBSERVACAO` varchar(200) NOT NULL
+  `OBSERVACAO` varchar(200) NOT NULL,
+  `DTFINALPLAN` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Extraindo dados da tabela `projeto`
 --
 
-INSERT INTO `projeto` (`CDPROJETO`, `NMPROJETO`, `DTENTRADA`, `DTINICIOPLAN`, `DTINICIOREAL`, `DTFINAL`, `PRECOR`, `PRECOD`, `CDFUNCGERENTE`, `CDPROFESSOR`, `AREAPROJ`, `CDFUNCPARTICIPANTE`, `CDFUNCRESPONSAVEL`, `CDFUNCCOMERCIAL`, `ATRASO`, `ATRASOSIM`, `TIPOCLIENTEPROJ`, `CDCLIENTEPROJ`, `DTASSINATURA`, `NUMVISITASTEC`, `CONTRAPROPOSTA`, `FORMAPAG`, `STATUSPROJ`, `CEP`, `LOGRADOURO`, `NUMERO`, `COMP`, `BAIRRO`, `CIDADE`, `ESTADO`, `STATUS`, `OBSERVACAO`) VALUES
-(30, 'Teste', '03/01/1995', '03/01/1995', '03/01/1995', '03/01/1995', 100, 90, 1, 0, '', '', 1, 1, 'Não', 0, 'pessoaJuridica', 1, '03/01/1995', 80, 'Não', 'Dinheiro', 'Em andamento', '35.170-141', 'Rua Belo Horizonte', 2, '', 'Olaria', 'Coronel Fabriciano', 'MG', 'A', 'nada'),
-(31, 'Projeto de tratamento de água', '03/01/1995', '03/01/1995', '03/01/1995', '03/01/1995', 100, 90, 1, 0, '', '', 1, 1, 'Não', 0, 'pessoaFisica', 3, '03/01/1995', 2, 'Não', 'Dinheiro', 'Não Iniciado', '35.170-370', 'Rua Vinte e Quatro', 12, '', 'Belvedere', 'Coronel Fabriciano', 'MG', 'A', '');
+INSERT INTO `projeto` (`CDPROJETO`, `NMPROJETO`, `DTENTRADA`, `DTINICIOPLAN`, `DTINICIOREAL`, `DTFINAL`, `PRECOR`, `PRECOD`, `CDFUNCGERENTE`, `CDPROFESSOR`, `AREAPROJ`, `CDFUNCPARTICIPANTE`, `CDFUNCRESPONSAVEL`, `CDFUNCCOMERCIAL`, `ATRASO`, `ATRASOSIM`, `TIPOCLIENTEPROJ`, `CDCLIENTEPROJ`, `DTASSINATURA`, `NUMVISITASTEC`, `CONTRAPROPOSTA`, `OBSVISITAS`, `FORMAPAG`, `STATUSPROJ`, `CEP`, `LOGRADOURO`, `NUMERO`, `COMP`, `BAIRRO`, `CIDADE`, `ESTADO`, `STATUS`, `OBSERVACAO`, `DTFINALPLAN`) VALUES
+(86, 'teste', '03/01/1995', '03/01/1995', '03/01/1995', '03/01/1995', 100, 90, 4, 0, 'Arquitetura e Urbanismo,Engenharia Ambiental e Sanitária,Engenharia Civil', '1</br></br></br></br></br></br></br>,2</br></br></br></br></br></br></br>,3</br></br></br></br></br></br></br>', 1, 2, 'Sim', 3, 'pessoaFisica', 5, '03/01/1995', 31, 'Não', 'asfasfd', 'Dinheiro', 'Concluido', '35.170-370', 'Rua Vinte e Quatro', 123, '', 'Belvedere', 'Coronel Fabriciano', 'MG', 'A', '', '03/01/2016');
 
 -- --------------------------------------------------------
 
@@ -338,7 +346,7 @@ CREATE TABLE `usuario` (
   `CDUSUARIO` int(10) UNSIGNED NOT NULL,
   `NMUSUARIO` varchar(100) NOT NULL,
   `SENHA` varchar(40) NOT NULL,
-  `NIVEL` enum('Administrador','Diretor','Membro') NOT NULL,
+  `NIVEL` enum('Administrador','Gerente','Diretor','Membro') NOT NULL,
   `STATUS` enum('A','D') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -349,7 +357,8 @@ CREATE TABLE `usuario` (
 INSERT INTO `usuario` (`CDUSUARIO`, `NMUSUARIO`, `SENHA`, `NIVEL`, `STATUS`) VALUES
 (1, 'alberttaurelio@hotmail.com', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'Administrador', 'A'),
 (2, 'teste@teste.com', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'Membro', 'A'),
-(3, 'fernanda@politechjr.com', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'Diretor', 'A');
+(3, 'fernanda@politechjr.com', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'Diretor', 'A'),
+(5, 'gerente@gerente.com', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'Gerente', 'A');
 
 --
 -- Indexes for dumped tables
@@ -446,7 +455,7 @@ ALTER TABLE `fornecedor`
 -- AUTO_INCREMENT for table `funcionario`
 --
 ALTER TABLE `funcionario`
-  MODIFY `CDFUNCIONARIO` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `CDFUNCIONARIO` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 --
 -- AUTO_INCREMENT for table `pessoaj`
 --
@@ -456,12 +465,12 @@ ALTER TABLE `pessoaj`
 -- AUTO_INCREMENT for table `projeto`
 --
 ALTER TABLE `projeto`
-  MODIFY `CDPROJETO` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+  MODIFY `CDPROJETO` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=87;
 --
 -- AUTO_INCREMENT for table `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `CDUSUARIO` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `CDUSUARIO` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- Constraints for dumped tables
 --
